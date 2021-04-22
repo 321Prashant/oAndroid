@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllImages">
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="logOut"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="157dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="112dp"
+        android:hint="email"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="164dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="184dp"
+        android:hint="name"
+        app:layout_constraintBottom_toTopOf="@+id/logoutbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="157dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="27dp"
+        android:hint="phone"
+        app:layout_constraintBottom_toTopOf="@+id/logoutbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:onClick="upload"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
