@@ -46,6 +46,13 @@ public class uploadHere extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
 
         userId = fAuth.getCurrentUser().getUid();
+
+        showAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(uploadHere.this,showall.class));
+            }
+        });
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
